@@ -1,12 +1,18 @@
 <?php
-include_once './connection.php'
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+include_once './connection.php';
+// require './lib\vendor\autoload.php';
 ?>
 
 
 <!DOCTYPE HTML>
 <html lang="pt-BR">
     <head>
-        <title>Seppo - Corporate One Page WordPress Theme</title>
+        <title>B12</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="description" content="Portfólio" />
         <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
@@ -34,7 +40,7 @@ include_once './connection.php'
             <header class="header-holder">             
                 <div class="menu-wrapper center-relative relative">             
                     <div class="header-logo">
-                        <a href="index.html">
+                        <a href="index.php">
                             <img src="images/logo_b12.gif" alt="Logo">
                         </a>               
                     </div>
@@ -224,7 +230,7 @@ include_once './connection.php'
                                     <div class="grid-sizer"></div>
 
                                     <div id="p-item-1" class="grid-item element-item p_one_fourth">
-                                        <a class="item-link ajax-portfolio" href="portfolio-1.html" data-id="1">
+                                        <a class="item-link ajax-portfolio" href="portfolio-1.php" data-id="1">
                                             <img src="images/portfolio_item_01.jpg" alt="" />
                                             <div class="portfolio-text-holder">
                                                 <p class="portfolio-desc">INTERIOR</p>
@@ -234,7 +240,7 @@ include_once './connection.php'
                                     </div>
 
                                     <div id="p-item-2" class="grid-item element-item p_one_half">
-                                        <a class="item-link ajax-portfolio" href="portfolio-2.html" data-id="2">
+                                        <a class="item-link ajax-portfolio" href="portfolio-2.php" data-id="2">
                                             <img src="images/portfolio_item_02.jpg" alt="" />
                                             <div class="portfolio-text-holder">
                                                 <p class="portfolio-desc">FASHION</p>
@@ -244,7 +250,7 @@ include_once './connection.php'
                                     </div>
 
                                     <div id="p-item-3" class="grid-item element-item p_one_fourth">
-                                        <a class="item-link ajax-portfolio" href="portfolio-3.html" data-id="3">
+                                        <a class="item-link ajax-portfolio" href="portfolio-3.php" data-id="3">
                                             <img src="images/portfolio_item_03.jpg" alt="" />
                                             <div class="portfolio-text-holder">
                                                 <p class="portfolio-desc">CREATIVE</p>
@@ -254,7 +260,7 @@ include_once './connection.php'
                                     </div>
 
                                     <div id="p-item-4" class="grid-item element-item p_one_fourth">
-                                        <a class="item-link ajax-portfolio" href="portfolio-4.html" data-id="4">
+                                        <a class="item-link ajax-portfolio" href="portfolio-4.php" data-id="4">
                                             <img src="images/portfolio_item_04.jpg" alt="" />
                                             <div class="portfolio-text-holder">
                                                 <p class="portfolio-desc">ARCHITECTURE</p>
@@ -743,8 +749,62 @@ include_once './connection.php'
                             $data = filter_input_array(INPUT_POST, FILTER_DEFAULT);
                             if(!empty($data ['SendAddMsg'])){
                                 var_dump($data);
+                                $query_msg = "INSERT INTO message_form (name, email, subject, content, created) VALUES (:name, :email, :subject, :content, NOW())";
+                                $add_msg = $conn -> prepare ($query_msg);
+
+                                $add_msg -> bindParam(':name', $data['name'], PDO::PARAM_STR);
+                                $add_msg -> bindParam(':email', $data['email'], PDO::PARAM_STR);
+                                $add_msg -> bindParam(':subject', $data['subject'], PDO::PARAM_STR);
+                                $add_msg -> bindParam(':content', $data['content'], PDO::PARAM_STR);
+                                $add_msg -> execute();
+
+                                if($add_msg -> rowCount()){
+                                    $mail = new PHPMailer(true);
+                                    try {
+                                        $mail->CharSet = 'UTF-8';
+                                        $mail->isSMTP();
+                                        $mail->Host = 'smtp.mailtrap.io';
+                                        $mail->SMTPAuth = true;
+                                        $mail->Username = 'a3d93f3ccdb6b8';
+                                        $mail->Password = '6bfafbd5283f3e';
+                                        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+                                        $mail->Port = 2525;
+                    
+                                        //Enviar e-mail para o cliente
+                                        $mail->setFrom('lucasmatutani@gmail.com', 'Atendimento');
+                                        $mail->addAddress($data['email'], $data['name']);
+                    
+                                        $mail->isHTML(true);
+                                        $mail->Subject = 'Recebi a mensagem de contato';
+                                        $mail->Body = "Prezado(a) " . $data['name'] . "<br><br>Recebi o seu e-mail.<br>Será lido o mais rápido possível.<br>Em breve será respondido.<br><br>Assunto: " . $data['subject'] . "<br>Conteúdo: " . $data['content'];
+                                        $mail->AltBody = "Prezado(a) " . $data['name'] . "\n\nRecebi o seu e-mail.\nSerá lido o mais rápido possível.\nEm breve será respondido.\n\nAssunto: " . $data['subject'] . "\nConteúdo: " . $data['content'];
+                    
+                                        $mail->send();
+                                        
+                                        $mail->clearAddresses();
+                    
+                                        //Enviar e-mail para o colaborador da empresa
+                                        $mail->setFrom('atendimento@celke.com.br', 'Atendimento');
+                                        $mail->addAddress('kelly@celke.com.br', 'Kelly');
+                    
+                                        $mail->isHTML(true);
+                                        $mail->Subject = $data['subject'];
+                                        $mail->Body = "Nome: " . $data['name'] . "<br>E-mail: " . $data['email'] . "<br>Assunto: " . $data['subject'] . "<br>Conteúdo: " . $data['content'];
+                                        $mail->AltBody = "Nome: " . $data['name'] . "\nE-mail: " . $data['email'] . "\nAssunto: " . $data['subject'] . "\nConteúdo: " . $data['content'];
+                    
+                                        $mail->send();
+                                        unset($data);
+                                        echo '<div class="alert alert-success">Message sent successfully</div>';                    
+                                    } catch (Exception $e) {
+                                        echo "Erro: Mensagem de contato não enviada com sucesso!<br>";
+                                    }
+                                } else {
+                                    echo "Erro: Mensagem de contato não enviada com sucesso!<br>";
+                                }
                             }
+                                    
                             ?>
+                            
                             <div class="one_half last ">
                                 <div class="contact-form">
                                     <p>
@@ -797,7 +857,7 @@ include_once './connection.php'
                     </div>
 
                     <div class="copyright-holder">
-                        © 2018 Seppo HTML Template by <a href="https://cocobasic.com">CocoBasic</a>            
+                        © 2022 Lucas Matutani           
                     </div>
                 </div>
             </footer>
