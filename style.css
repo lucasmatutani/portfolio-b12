@@ -148,6 +148,7 @@ body pre {
     position: absolute;
     transform: translateY(-50%);
     top: 50%;
+    color: #fff;
 }
 
 .header-logo img {
@@ -789,7 +790,7 @@ a.button-dot:hover:before {
 ====================================== */
 
 #home {    
-    background-image: url(images/eu_horizontal2.png);
+    background-image: url(images/fundo_preto.webp);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -801,7 +802,7 @@ a.button-dot:hover:before {
 
 #home .section-wrapper {
     margin: auto;
-    margin-right: 450px;
+    margin-right: 250px;
     padding: 0;
 }
 
@@ -1087,7 +1088,7 @@ h1.big-text {
 
 .portfolio-content-wrapper {
     display: none;
-    height: 50vh;
+    height: vh;
 }
 
 .portfolio-content-wrapper.show {

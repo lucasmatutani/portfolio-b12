@@ -54,7 +54,7 @@ $result = mysqli_query($conexao, "INSERT INTO message_form(name, email, subject,
                 <div class="menu-wrapper center-relative relative">             
                     <div class="header-logo">
                         <a href="index.php">
-                            <img src="images/logo_b12.gif" alt="Logo">
+                            <img src="images/capsules-solid2.svg" alt="Logo">
                         </a>               
                     </div>
 
@@ -70,16 +70,13 @@ $result = mysqli_query($conexao, "INSERT INTO message_form(name, email, subject,
                         <nav id="header-main-menu">
                             <ul class="main-menu sm sm-clean">
                                 <li>
-                                    <a href="#home">Pagina Inicial</a>
+                                    <a href="#home">Página Inicial</a>
                                 </li>
                                 <li>
                                     <a href="#services">Serviços</a>
                                 </li>
                                 <li>
                                     <a href="#about">Sobre</a>
-                                </li>
-                                <li>
-                                    <a href="#news">News</a>
                                 </li>
                                 <li>
                                     <a href="#portfolio">Portfolios</a>
@@ -220,7 +217,7 @@ $result = mysqli_query($conexao, "INSERT INTO message_form(name, email, subject,
                                 </div>
                             </div>
 
-                            <div class="one_half last" data-threshold="0 0" data-jarallax-element="120 0">
+                            <div class="one_half last" data-threshold="0 0" data-jarallax-element="90 0">
                                 <img src="images/eu_vertical2.jpeg" alt="" />                     
                             </div>
                             <div class="clear"></div>
@@ -243,7 +240,7 @@ $result = mysqli_query($conexao, "INSERT INTO message_form(name, email, subject,
                                     <div class="grid-sizer"></div>
 
                                     <div id="p-item-1" class="grid-item element-item p_one_fourth">
-                                        <a class="item-link ajax-portfolio" href="portfolio-1.php" data-id="1">
+                                        <a class="item-link" href="portfolio-1.php" data-id="1">
                                             <img src="images/portfolio_item_01.jpg" alt="" />
                                             <div class="portfolio-text-holder">
                                                 <p class="portfolio-desc">INTERIOR</p>
@@ -253,7 +250,7 @@ $result = mysqli_query($conexao, "INSERT INTO message_form(name, email, subject,
                                     </div>
 
                                     <div id="p-item-2" class="grid-item element-item p_one_half">
-                                        <a class="item-link ajax-portfolio" href="portfolio-2.php" data-id="2">
+                                        <a class="item-link" href="portfolio-2.php" data-id="2">
                                             <img src="images/portfolio_item_02.jpg" alt="" />
                                             <div class="portfolio-text-holder">
                                                 <p class="portfolio-desc">FASHION</p>
@@ -263,7 +260,7 @@ $result = mysqli_query($conexao, "INSERT INTO message_form(name, email, subject,
                                     </div>
 
                                     <div id="p-item-3" class="grid-item element-item p_one_fourth">
-                                        <a class="item-link ajax-portfolio" href="portfolio-3.php" data-id="3">
+                                        <a class="item-link" href="portfolio-3.php" data-id="3">
                                             <img src="images/portfolio_item_03.jpg" alt="" />
                                             <div class="portfolio-text-holder">
                                                 <p class="portfolio-desc">CREATIVE</p>
@@ -273,7 +270,7 @@ $result = mysqli_query($conexao, "INSERT INTO message_form(name, email, subject,
                                     </div>
 
                                     <div id="p-item-4" class="grid-item element-item p_one_fourth">
-                                        <a class="item-link ajax-portfolio" href="portfolio-4.php" data-id="4">
+                                        <a class="item-link" href="portfolio-4.php" data-id="4">
                                             <img src="images/portfolio_item_04.jpg" alt="" />
                                             <div class="portfolio-text-holder">
                                                 <p class="portfolio-desc">ARCHITECTURE</p>
@@ -437,9 +434,9 @@ $result = mysqli_query($conexao, "INSERT INTO message_form(name, email, subject,
                     <div class="section-wrapper block content-1170 center-relative">                                                
                         <div class="content-wrapper">
                             <div class="member member-left">
-                                <img src="images/eu_vertical.jpeg" alt="" data-threshold="200 200" data-jarallax-element="60 0">
+                                <img src="images/eu_vertical.jpeg" alt="" data-threshold="500 0" data-jarallax-element="110 0">
                                 <div class="member-info">
-                                    <p class="member-postition">PROGRAMADOR</p>
+                                    <p class="member-postition">DESENVOLVEDOR WEB</p>
                                     <h5 class="member-name">Lucas Matutani</h5>
                                     <div class="member-content">
                                         <p>
@@ -480,9 +477,9 @@ $result = mysqli_query($conexao, "INSERT INTO message_form(name, email, subject,
                             
                             <div class="member big-screen member-right">
                                 <div class="member-info">
-                                    <img src="images/eu_vertical.jpeg" alt="" data-threshold="-200 0" data-jarallax-element="60 0" />
-                                    <p class="member-postition">DESIGNER</p>
-                                    <h5 class="member-name">John Williams</h5>
+                                    <img src="images/dan_horizontal.jpeg" alt="" data-threshold="-300 0" data-jarallax-element="80 0" />
+                                    <p class="member-postition">AUDIO VISUAL</p>
+                                    <h5 class="member-name">Danilo Murakami</h5>
                                     <div class="member-content">
                                         <p>
                                             Code the energy hidden in matter citizens of distant epochs sun. Citizens of distant epochs encyclopaedia galant ctica the ash of stellar alchemy Vangelis white dwarf adipisci velit. Nemo enim ipsam volupta tem quia voluptas sit aspernatur aut odit aut fugit radio telescope quis nostrum exercitatio nem ullam corporis suscipit laboriosam quis.
@@ -521,10 +518,10 @@ $result = mysqli_query($conexao, "INSERT INTO message_form(name, email, subject,
                             <br>
 
                             <div class="member member-left">
-                                <img src="images/about_item_03.jpg" alt="" data-threshold="0 0" data-jarallax-element="60 0" />
+                                <img src="images/eu_vertical2.jpeg" alt="" data-threshold="500 0" data-jarallax-element="60 0" />
                                 <div class="member-info">
-                                    <p class="member-postition">DEVELOPER</p>
-                                    <h5 class="member-name">Vanessa Doe</h5>
+                                    <p class="member-postition">DESIGNER</p>
+                                    <h5 class="member-name">Vivian Murakami</h5>
                                     <div class="member-content">
                                         <p>
                                             Code the energy hidden in matter citizens of distant epochs sun. Citizens of distant epochs encyclopaedia galant ctica the ash of stellar alchemy Vangelis white dwarf adipisci velit. Nemo enim ipsam volupta tem quia voluptas sit aspernatur aut odit aut fugit radio telescope quis nostrum exercitatio nem ullam corporis suscipit laboriosam quis.
@@ -594,9 +591,19 @@ $result = mysqli_query($conexao, "INSERT INTO message_form(name, email, subject,
                                 <div class="skills-holder">
 
                                     <div class="skill-holder">
+                                        <div class="skill-percent">85%</div>
+                                        <div class="skill-text">
+                                            <span>Html, Css e Php</span>
+                                            <div class="skill">
+                                                <div class="skill-fill" data-fill="85%"></div>                                                    
+                                            </div>                                                
+                                        </div>                                            
+                                    </div>
+
+                                    <div class="skill-holder">
                                         <div class="skill-percent">75%</div>
                                         <div class="skill-text">
-                                            <span>Creativity</span>
+                                            <span>Banco de dados</span>
                                             <div class="skill">
                                                 <div class="skill-fill" data-fill="75%"></div>                                                    
                                             </div>                                                
@@ -604,11 +611,11 @@ $result = mysqli_query($conexao, "INSERT INTO message_form(name, email, subject,
                                     </div>
 
                                     <div class="skill-holder">
-                                        <div class="skill-percent">45%</div>
+                                        <div class="skill-percent">80%</div>
                                         <div class="skill-text">
-                                            <span>Cooking</span>
+                                            <span>Criatividade</span>
                                             <div class="skill">
-                                                <div class="skill-fill" data-fill="45%"></div>                                                    
+                                                <div class="skill-fill" data-fill="80%"></div>                                                    
                                             </div>                                                
                                         </div>                                            
                                     </div>
@@ -616,19 +623,9 @@ $result = mysqli_query($conexao, "INSERT INTO message_form(name, email, subject,
                                     <div class="skill-holder">
                                         <div class="skill-percent">90%</div>
                                         <div class="skill-text">
-                                            <span>PhP</span>
+                                            <span>Pacote Adobe</span>
                                             <div class="skill">
                                                 <div class="skill-fill" data-fill="90%"></div>                                                    
-                                            </div>                                                
-                                        </div>                                            
-                                    </div>
-
-                                    <div class="skill-holder">
-                                        <div class="skill-percent">65%</div>
-                                        <div class="skill-text">
-                                            <span>Marketing</span>
-                                            <div class="skill">
-                                                <div class="skill-fill" data-fill="65%"></div>                                                    
                                             </div>                                                
                                         </div>                                            
                                     </div>
