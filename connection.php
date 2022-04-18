@@ -1,14 +1,15 @@
 <?php
 
-$host = "localhost";
-$user = "root";
-$password = "";
-$dbname = "form";
-$port = "";
+$dbHost = "localhost";
+$dbUsername = "root";
+$dbPassword = "";
+$dbName = "form";
 
-try{
-    $conn = new PDO("mysql:host=$host; port=$port; dbname=" . $dbname, $user, $password);
-    echo "Conexão com banco de dados realizado com sucesso!";
-}catch (Exception $ex) {
-    echo "Erro: Conexão com banco de dados não realizado com sucesso!";
-}
+
+    $conexao = new mysqli ($dbHost, $dbUsername, $dbPassword, $dbName);
+    // if($conexao -> connect_error){
+    //     echo "Erro";
+    // } else {
+    //     echo "Conectado com sucesso";
+    // }
+?>

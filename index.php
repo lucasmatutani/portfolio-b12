@@ -1,11 +1,24 @@
 <?php
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
+if(isset($_POST['submit']))
+{
+//     print_r($_POST['name']);
+//     print_r('<br>');
+//     print_r($_POST['email']);
+//     print_r('<br>');
+//     print_r($_POST['subject']);
+//     print_r('<br>');
+//     print_r($_POST['content']);
 
 include_once './connection.php';
-// require './lib\vendor\autoload.php';
+
+$nome = $_POST['name'];
+$email = $_POST['email'];
+$assunto = $_POST['subject'];
+$mensagem = $_POST['content'];
+
+$result = mysqli_query($conexao, "INSERT INTO message_form(name, email, subject, content) VALUES ('$nome','$email','$assunto','$mensagem')");
+}
 ?>
 
 
@@ -19,7 +32,7 @@ include_once './connection.php';
         <meta name="author" content="Lucas Matutani" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        <link rel="shortcut icon" href="images/favicon.ico" />    
+        <link rel="shortcut icon" href="images/capsules-solid.svg" />    
         <link href='https://fonts.googleapis.com/css?family=Rubik:400,700,700i' rel='stylesheet' type='text/css'>		
         <link rel="stylesheet" type="text/css"  href='style.css' />
 
@@ -57,10 +70,10 @@ include_once './connection.php';
                         <nav id="header-main-menu">
                             <ul class="main-menu sm sm-clean">
                                 <li>
-                                    <a href="#home">Home</a>
+                                    <a href="#home">Pagina Inicial</a>
                                 </li>
                                 <li>
-                                    <a href="#services">Services</a>
+                                    <a href="#services">Serviços</a>
                                 </li>
                                 <li>
                                     <a href="#about">Sobre</a>
@@ -69,13 +82,13 @@ include_once './connection.php';
                                     <a href="#news">News</a>
                                 </li>
                                 <li>
-                                    <a href="#portfolio">Portfolio</a>
+                                    <a href="#portfolio">Portfolios</a>
                                 </li>
                                 <li>
-                                    <a href="#pricing">Pricing</a>
+                                    <a href="#pricing">Preços</a>
                                 </li>
                                 <li>
-                                    <a href="#team">Team</a>
+                                    <a href="#team">Time</a>
                                 </li>
                                 <li>
                                     <a href="#skills">Skills</a>
@@ -84,7 +97,7 @@ include_once './connection.php';
                                     <a href="#millstones">Milestones</a>
                                 </li>
                                 <li>
-                                    <a href="#contact">Contact</a>
+                                    <a href="#contact">Contato</a>
                                 </li>
                             </ul>
                         </nav>                       
@@ -124,7 +137,7 @@ include_once './connection.php';
                                 <div class="service-holder">
                                     <p class="service-num">1</p>
                                     <div class="service-txt">
-                                        <h4>Preciese</h4>
+                                        <h4>Desenvolvedor Web <br> Full-Stack</h4>
                                         <p>
                                             Curabitur cursus mattis ligula a maximus pellentesque in purus malesuada pharetra eros.
                                         </p>
@@ -142,7 +155,7 @@ include_once './connection.php';
                                 <div class="service-holder">
                                     <p class="service-num">2</p>
                                     <div class="service-txt">
-                                        <h4>Support</h4>
+                                        <h4>Suporte e Web Desinger<br><br></h4>
                                         <p>
                                             Est sem integer suscipit enim quis dictum feugiat etiam pellentesque curabitur donec porttitor.
                                         </p>
@@ -160,7 +173,7 @@ include_once './connection.php';
                                 <div class="service-holder">
                                     <p class="service-num">3</p>
                                     <div class="service-txt">
-                                        <h4>Responsive</h4>
+                                        <h4>Audio Visual<br><br><br></h4>
                                         <p>
                                             Donec vel est sem integer suscipit enim quis lorem posuere vestibulum metus tempor vitae.
                                         </p>
@@ -219,7 +232,7 @@ include_once './connection.php';
                 <div id="portfolio" class="section no-padding">                   
                     <div class="page-title-holder">
                         <h3 class="entry-title">
-                            PORTFOLIO                        
+                            PORTFOLIOS                       
                         </h3>
                     </div>
                     <div class="section-wrapper block content-1170 center-relative">                                                
@@ -418,16 +431,16 @@ include_once './connection.php';
                 <div id="team" class="section">                   
                     <div class="page-title-holder">
                         <h3 class="entry-title">
-                            TEAM             
+                            TIME             
                         </h3>
                     </div>
                     <div class="section-wrapper block content-1170 center-relative">                                                
                         <div class="content-wrapper">
                             <div class="member member-left">
-                                <img src="images/about_item_01.jpg" alt="" data-threshold="0 0" data-jarallax-element="60 0">
+                                <img src="images/eu_vertical.jpeg" alt="" data-threshold="200 200" data-jarallax-element="60 0">
                                 <div class="member-info">
-                                    <p class="member-postition">CEO</p>
-                                    <h5 class="member-name">Marty Stone</h5>
+                                    <p class="member-postition">PROGRAMADOR</p>
+                                    <h5 class="member-name">Lucas Matutani</h5>
                                     <div class="member-content">
                                         <p>
                                             Code the energy hidden in matter citizens of distant epochs sun. Citizens of distant epochs encyclopaedia galant ctica the ash of stellar alchemy Vangelis white dwarf adipisci velit. Nemo enim ipsam volupta tem quia voluptas sit aspernatur aut odit aut fugit radio telescope quis nostrum exercitatio nem ullam corporis suscipit laboriosam quis.
@@ -462,18 +475,19 @@ include_once './connection.php';
                                     </div>
                                 </div>
                             </div>
-
+                            
                             <br>
-
+                            
                             <div class="member big-screen member-right">
                                 <div class="member-info">
+                                    <img src="images/eu_vertical.jpeg" alt="" data-threshold="-200 0" data-jarallax-element="60 0" />
                                     <p class="member-postition">DESIGNER</p>
                                     <h5 class="member-name">John Williams</h5>
                                     <div class="member-content">
                                         <p>
                                             Code the energy hidden in matter citizens of distant epochs sun. Citizens of distant epochs encyclopaedia galant ctica the ash of stellar alchemy Vangelis white dwarf adipisci velit. Nemo enim ipsam volupta tem quia voluptas sit aspernatur aut odit aut fugit radio telescope quis nostrum exercitatio nem ullam corporis suscipit laboriosam quis.
                                         </p>
-                                        <div class="member-social-holder" data-jarallax-element="0 -30">
+                                        <div class="member-social-holder" data-jarallax-element="0 30">
                                             <div class="social">
                                                 <a href="#" target="_blank">
                                                     <span class="fa fa-facebook"></span>
@@ -502,7 +516,6 @@ include_once './connection.php';
                                         </div>
                                     </div>
                                 </div>
-                                <img src="images/about_item_02.jpg" alt="" data-threshold="0 0" data-jarallax-element="60 0" />
                             </div>
 
                             <br>
@@ -704,13 +717,13 @@ include_once './connection.php';
                 <div id="contact" class="section">                   
                     <div class="page-title-holder">
                         <h3 class="entry-title">
-                            CONTACT             
+                            CONTATO             
                         </h3>
                     </div>
                     <div class="section-wrapper block content-1170 center-relative">                                                
                         <div class="content-wrapper">
                             <div class="one_half ">
-                                <p class="title-description-up">CONTACT US</p>
+                                <p class="title-description-up">FALE CONOSCO</p>
                                 <h2 class="entry-title medium-text">
                                     Lets start <br>
                                     Working
@@ -745,68 +758,10 @@ include_once './connection.php';
                                     </a>
                                 </div>
                             </div>
-                            <?php
-                            $data = filter_input_array(INPUT_POST, FILTER_DEFAULT);
-                            if(!empty($data ['SendAddMsg'])){
-                                var_dump($data);
-                                $query_msg = "INSERT INTO message_form (name, email, subject, content, created) VALUES (:name, :email, :subject, :content, NOW())";
-                                $add_msg = $conn -> prepare ($query_msg);
-
-                                $add_msg -> bindParam(':name', $data['name'], PDO::PARAM_STR);
-                                $add_msg -> bindParam(':email', $data['email'], PDO::PARAM_STR);
-                                $add_msg -> bindParam(':subject', $data['subject'], PDO::PARAM_STR);
-                                $add_msg -> bindParam(':content', $data['content'], PDO::PARAM_STR);
-                                $add_msg -> execute();
-
-                                if($add_msg -> rowCount()){
-                                    $mail = new PHPMailer(true);
-                                    try {
-                                        $mail->CharSet = 'UTF-8';
-                                        $mail->isSMTP();
-                                        $mail->Host = 'smtp.mailtrap.io';
-                                        $mail->SMTPAuth = true;
-                                        $mail->Username = 'a3d93f3ccdb6b8';
-                                        $mail->Password = '6bfafbd5283f3e';
-                                        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-                                        $mail->Port = 2525;
-                    
-                                        //Enviar e-mail para o cliente
-                                        $mail->setFrom('lucasmatutani@gmail.com', 'Atendimento');
-                                        $mail->addAddress($data['email'], $data['name']);
-                    
-                                        $mail->isHTML(true);
-                                        $mail->Subject = 'Recebi a mensagem de contato';
-                                        $mail->Body = "Prezado(a) " . $data['name'] . "<br><br>Recebi o seu e-mail.<br>Será lido o mais rápido possível.<br>Em breve será respondido.<br><br>Assunto: " . $data['subject'] . "<br>Conteúdo: " . $data['content'];
-                                        $mail->AltBody = "Prezado(a) " . $data['name'] . "\n\nRecebi o seu e-mail.\nSerá lido o mais rápido possível.\nEm breve será respondido.\n\nAssunto: " . $data['subject'] . "\nConteúdo: " . $data['content'];
-                    
-                                        $mail->send();
-                                        
-                                        $mail->clearAddresses();
-                    
-                                        //Enviar e-mail para o colaborador da empresa
-                                        $mail->setFrom('atendimento@celke.com.br', 'Atendimento');
-                                        $mail->addAddress('kelly@celke.com.br', 'Kelly');
-                    
-                                        $mail->isHTML(true);
-                                        $mail->Subject = $data['subject'];
-                                        $mail->Body = "Nome: " . $data['name'] . "<br>E-mail: " . $data['email'] . "<br>Assunto: " . $data['subject'] . "<br>Conteúdo: " . $data['content'];
-                                        $mail->AltBody = "Nome: " . $data['name'] . "\nE-mail: " . $data['email'] . "\nAssunto: " . $data['subject'] . "\nConteúdo: " . $data['content'];
-                    
-                                        $mail->send();
-                                        unset($data);
-                                        echo '<div class="alert alert-success">Message sent successfully</div>';                    
-                                    } catch (Exception $e) {
-                                        echo "Erro: Mensagem de contato não enviada com sucesso!<br>";
-                                    }
-                                } else {
-                                    echo "Erro: Mensagem de contato não enviada com sucesso!<br>";
-                                }
-                            }
-                                    
-                            ?>
+                            
                             
                             <div class="one_half last ">
-                                <div class="contact-form">
+                                <form class="contact-form" action="index.php" method="POST">
                                     <p>
                                         <input id="name" type="text" name="name" placeholder="Nome">
                                     </p>
@@ -820,9 +775,10 @@ include_once './connection.php';
                                         <textarea id="content" name="content" placeholder="Mensagem"></textarea>
                                     </p>
                                     <p class="contact-submit-holder">
-                                        <input type="submit" value="ENVIAR" name="SendAddMsg">
+                                        <input type="submit" value="ENVIAR" name="submit"
+                                        id="submit">
                                     </p>  
-                                </div>
+                                </form>
                             </div>                            
                             <div class="clear"></div>
                         </div>                        
@@ -833,15 +789,15 @@ include_once './connection.php';
             <!-- Footer -->
             <footer class="footer">
                 <div class="footer-content center-relative">
-                    <div class="footer-logo">
+                    <!-- <div class="footer-logo">
                         <img src="images/footer_logo.png" alt="Seppo" />
-                    </div>        
+                    </div>         -->
                     <div class="footer-logo-divider"></div>
                     <div class="footer-mail">            
-                        <a href="mailto:hello@site.com">hello@cocobasic.com</a>
+                        <a href="mailto:contato.b12digital@gmail.com">contato.b12digital@gmail.com</a>
                     </div>
                     <div class="footer-social-divider"></div>
-                    <div class="social-holder">
+                    <!-- <div class="social-holder">
                         <a href="#">
                             <span class="fa fa-twitter"></span>
                         </a>
@@ -854,7 +810,7 @@ include_once './connection.php';
                         <a href="#">
                             <span class="fa fa-dribbble"></span>
                         </a>
-                    </div>
+                    </div> -->
 
                     <div class="copyright-holder">
                         © 2022 Lucas Matutani           

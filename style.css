@@ -796,11 +796,12 @@ a.button-dot:hover:before {
     min-height: calc(100vh - 77px);    
     display: flex;
     margin-top:50PX;
+    height: 100vh;
 }
 
 #home .section-wrapper {
     margin: auto;
-    margin-right: 600px;
+    margin-right: 450px;
     padding: 0;
 }
 
@@ -822,6 +823,7 @@ h1.big-text {
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
+    height: 100vh;
 }
 
 .service-holder {
@@ -1085,6 +1087,7 @@ h1.big-text {
 
 .portfolio-content-wrapper {
     display: none;
+    height: 50vh;
 }
 
 .portfolio-content-wrapper.show {
