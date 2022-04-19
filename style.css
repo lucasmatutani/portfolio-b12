@@ -144,8 +144,8 @@ body pre {
 .header-logo {
     line-height: 0;
     font-size: 0;
-    /* float: left; */
-    /* position: absolute; */
+    float: left;
+    position: absolute;
     transform: translateY(-50%);
     top: 50%;
     color: #fff;
