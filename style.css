@@ -56,12 +56,12 @@ body {
 
 body a {
     text-decoration: none;
-    color: #47ea4e;
+    color: #9e61f2;
     transition: color .3s ease;
 }
 
 body a:hover {
-    color: #47ea4e; 
+    color: #9e61f2; 
 }
 
 body p, 
@@ -260,7 +260,7 @@ body .sm-clean li.active a,
 body .sm-clean li.current-page-ancestor > a, 
 body .sm-clean li.current_page_ancestor > a, 
 body .sm-clean li.current_page_item > a {
-    color: #47ea4e;
+    color: #9e61f2;
 }
 
 .sm-clean li {
@@ -345,7 +345,7 @@ body .sm-clean li.current_page_item > a {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #47ea4e;
+    background-color: #9e61f2;
     width: 285px;
     display: inline-block;
     z-index: 98;
@@ -358,7 +358,7 @@ body .sm-clean li.current_page_item > a {
     height: 0;
     border-style: solid;
     border-width: 130px 60px 0 0;
-    border-color: #47ea4e transparent transparent transparent;
+    border-color: #9e61f2 transparent transparent transparent;
     position: absolute;
     top: 0;
     right: 0;
@@ -525,7 +525,7 @@ body .social a:hover {
 body a.button {
     display: inline-block;
     color: #fff;
-    background-color: #47ea4e;
+    background-color: #9e61f2;
     text-align: left;
     padding: 10px 40px;
     cursor: pointer;
@@ -533,7 +533,7 @@ body a.button {
     text-decoration: none;
     transition: all .2s linear;
     margin-bottom: 17px;
-    border: 2px solid #47ea4e;
+    border: 2px solid #9e61f2;
     border-radius: 50px;
     font-size: 14px;
     letter-spacing: 2px;
@@ -542,7 +542,7 @@ body a.button {
 
 a.button:hover {
     background-color: transparent;
-    color: #47ea4e;
+    color: #9e61f2;
 }
 
 a.button-dot {
@@ -1205,7 +1205,7 @@ h1.big-text {
 .pricing-table-price {
     font-size: 100px;
     line-height: 120%;
-    color: #47ea4e;
+    color: #9e61f2;
     font-weight: 700;
 }
 
@@ -1226,7 +1226,7 @@ h1.big-text {
 }
 
 .pricing-list span.fa {
-    color: #47ea4e;
+    color: #9e61f2;
     margin-right: 25px;
 }
 
@@ -1309,7 +1309,7 @@ h1.big-text {
 }
 
 .member-social-holder {
-    background: #47ea4e;
+    background: #9e61f2;
     padding: 25px 50px;
     position: absolute;
     bottom: -35px;
@@ -1623,7 +1623,7 @@ body.blog {
 .blog-item-holder a.item-button {
     display: inline-block;
     color: #fff;
-    background-color: #47ea4e;
+    background-color: #9e61f2;
     text-align: left;
     padding: 10px 40px;    
     cursor: pointer;
@@ -1631,7 +1631,7 @@ body.blog {
     text-decoration: none;
     transition: all .2s linear;
     margin-bottom: 17px;
-    border: 2px solid #47ea4e;
+    border: 2px solid #9e61f2;
     border-radius: 50px;
     font-size: 14px;
     letter-spacing: 2px;
@@ -1641,7 +1641,7 @@ body.blog {
 
 .blog-item-holder a.item-button:hover {
     background-color: #fff;
-    color: #47ea4e;
+    color: #9e61f2;
 }
 
 
@@ -1701,7 +1701,7 @@ body.blog {
     position: absolute;
     right: -20px;
     top: -5px;
-    background-color: #47ea4e;
+    background-color: #9e61f2;
 }
 
 .single .post-info-wrapper .text-holder {
@@ -1779,7 +1779,7 @@ body.blog {
 }
 
 .single .nav-links > a {
-    background-color: #47ea4e;
+    background-color: #9e61f2;
     padding: 26px 30px 24px;
     margin: 0;
     display: inline;
@@ -1920,7 +1920,7 @@ body.blog {
 
 .contact-form input[type=submit] {
     color: #fff;
-    background-color: #47ea4e;
+    background-color: #9e61f2;
     text-align: center;
     padding: 10px 40px;    
     cursor: pointer;
@@ -1931,7 +1931,7 @@ body.blog {
     display: block;
     width: 100%;
     line-height: 35px;
-    border: 2px solid #47ea4e;
+    border: 2px solid #9e61f2;
     border-radius: 50px;
     font-size: 14px;
     letter-spacing: 2px;
@@ -1940,7 +1940,7 @@ body.blog {
 
 .contact-form input[type=submit]:hover {
     background-color: #fff;
-    color: #47ea4e;
+    color: #9e61f2;
 }
 
 
