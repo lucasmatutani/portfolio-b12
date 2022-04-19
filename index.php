@@ -32,7 +32,7 @@ $result = mysqli_query($conexao, "INSERT INTO message_form(name, email, subject,
         <meta name="author" content="Lucas Matutani" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        <link rel="shortcut icon" href="images/capsules-solid.svg" />    
+        <link rel="shortcut icon" href="images/logo_b12.jpeg" />    
         <link href='https://fonts.googleapis.com/css?family=Rubik:400,700,700i' rel='stylesheet' type='text/css'>		
         <link rel="stylesheet" type="text/css"  href='style.css' />
         <link href="fontawesome/css/all.css" rel="stylesheet">
@@ -80,7 +80,7 @@ $result = mysqli_query($conexao, "INSERT INTO message_form(name, email, subject,
                                     <a href="#about">Sobre</a>
                                 </li>
                                 <li>
-                                    <a href="#portfolio">Portfolios</a>
+                                    <a href="#portfolio">Portfólios</a>
                                 </li>
                                 <!-- <li>
                                     <a href="#pricing">Preços</a>
@@ -212,8 +212,8 @@ $result = mysqli_query($conexao, "INSERT INTO message_form(name, email, subject,
                                 </p>
                                 <br>
                                 <div class="button-holder text-left">
-                                    <a href="#portfolio" class="button">
-                                        LEARN MORE
+                                    <a href="#team" class="button">
+                                        SAIBA MAIS
                                     </a>
                                 </div>
                             </div>
@@ -230,7 +230,7 @@ $result = mysqli_query($conexao, "INSERT INTO message_form(name, email, subject,
                 <div id="portfolio" class="section no-padding">                   
                     <div class="page-title-holder">
                         <h3 class="entry-title">
-                            PORTFOLIOS                       
+                            PORTFÓLIOS                      
                         </h3>
                     </div>
                     <div class="section-wrapper block content-1170 center-relative">                                                
