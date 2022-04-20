@@ -32,6 +32,7 @@ $result = mysqli_query($conexao, "INSERT INTO message_form(name, email, subject,
         <meta name="author" content="Lucas Matutani" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+        
         <link rel="shortcut icon" href="images/logo_b12_tp.png" />    
         <link href='https://fonts.googleapis.com/css?family=Rubik:400,700,700i' rel='stylesheet' type='text/css'>		
         <link rel="stylesheet" type="text/css"  href='style.css' />
