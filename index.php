@@ -32,7 +32,7 @@ $result = mysqli_query($conexao, "INSERT INTO message_form(name, email, subject,
         <meta name="author" content="Lucas Matutani" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        <link rel="shortcut icon" href="images/logo_b12.jpeg" />    
+        <link rel="shortcut icon" href="images/logo_b12_tp.png" />    
         <link href='https://fonts.googleapis.com/css?family=Rubik:400,700,700i' rel='stylesheet' type='text/css'>		
         <link rel="stylesheet" type="text/css"  href='style.css' />
         <link href="fontawesome/css/all.css" rel="stylesheet">
@@ -55,7 +55,7 @@ $result = mysqli_query($conexao, "INSERT INTO message_form(name, email, subject,
                 <div class="menu-wrapper center-relative relative">             
                     <div class="header-logo">
                         <a href="index.php">
-                            <img src="images/logo_b12.jpeg" alt="Logo">
+                            <img src="images/logo_b12_tp.png" alt="Logo">
                         </a>               
                     </div>
 
@@ -108,10 +108,10 @@ $result = mysqli_query($conexao, "INSERT INTO message_form(name, email, subject,
 
                 <!-- Home Section -->
                 <div id="home" class="section no-page-title">                
-                    <div class="section-wrapper block content-1170 center-relative">                                                
-                        <div class="content-wrapper">                           
-                            <h1 class="big-text"> 
-                                Bem vindo<br>                               
+                    <div class="section-wrapper content-1170">                                                
+                        <div class="content-wrapper">                         
+                            <h1 class="big-text">
+                                Bem vindo <br>                            
                                 Somos a B12!
                             </h1>
                             <div class="button-holder text-left">
@@ -129,9 +129,9 @@ $result = mysqli_query($conexao, "INSERT INTO message_form(name, email, subject,
                         </h3>
                     </div>
                     <div class="section-wrapper block content-1170 center-relative">                                                
-                        <div class="content-wrapper">
+                        <div class="container content-wrapper">
 
-                            <div class="one_third ">
+                            <div class="one_third">
                                 <div class="service-holder">
                                     <p class="service-num">1</p>
                                     <div class="service-txt">
@@ -149,13 +149,13 @@ $result = mysqli_query($conexao, "INSERT INTO message_form(name, email, subject,
                                 </div>
                             </div>
 
-                            <div class="one_third ">
+                            <div class="one_third">
                                 <div class="service-holder">
                                     <p class="service-num">2</p>
                                     <div class="service-txt">
                                         <h4>Suporte e Web Desinger</h4>
                                         <p>
-                                            Temos o melhor suporte e os melhores layouts para seu site.
+                                            Temos o melhor suporte e os melhores layouts para o seu site.
                                         </p>
                                         <br>
                                         <div class="button-holder text-left" style="padding-top: 15px;">
