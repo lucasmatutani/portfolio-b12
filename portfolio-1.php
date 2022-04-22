@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
 <html lang="pt-BR">
     <head>
-        <title>Seppo - Corporate One Page WordPress Theme</title>
+        <title>B12</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="description" content="Template by CocoBasic" />
         <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
         <meta name="author" content="CocoBasic" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        <link rel="shortcut icon" href="images/favicon.ico" />    
+        <link rel="shortcut icon" href="images/logo_b12_tp.png" />    
         <link href='https://fonts.googleapis.com/css?family=Rubik:400,700,700i' rel='stylesheet' type='text/css'>		
         <link rel="stylesheet" type="text/css"  href='style.css' />
 
@@ -23,14 +23,14 @@
         <div class="site-wrapper">   
 
             <div class="doc-loader">
-                <img src="images/preloader.gif" alt="Seppo">
+                <img src="images/logo_b12.gif" alt="logo">
             </div>       
 
             <header class="header-holder">             
                 <div class="menu-wrapper center-relative relative">             
                     <div class="header-logo">
                         <a href="index.html">
-                            <img src="images/logo.png" alt="Seppo">
+                            <img src="images/logo_b12_tp.png" alt="logo">
                         </a>               
                     </div>
 
@@ -46,37 +46,37 @@
                         <nav id="header-main-menu">
                             <ul class="main-menu sm sm-clean">
                                 <li>
-                                    <a href="index.html#home">Home</a>
+                                    <a href="index.php#home">Página Inicial</a>
                                 </li>
                                 <li>
-                                    <a href="index.html#services">Services</a>
+                                    <a href="index.php#services">Serviços</a>
                                 </li>
                                 <li>
-                                    <a href="index.html#about">About</a>
+                                    <a href="index.php#about">Sobre</a>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <a href="index.html#clients">Clients</a>
                                 </li>
                                 <li>
                                     <a href="index.html#news">News</a>
-                                </li>
+                                </li> -->
                                 <li>
-                                    <a href="index.html#portfolio">Portfolio</a>
+                                    <a href="index.php#portfolio">Portfólio</a>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <a href="index.html#pricing">Pricing</a>
+                                </li> -->
+                                <li>
+                                    <a href="index.php#team">Time</a>
                                 </li>
                                 <li>
-                                    <a href="index.html#team">Team</a>
+                                    <a href="index.php#skills">Skills</a>
                                 </li>
-                                <li>
-                                    <a href="index.html#skills">Skills</a>
-                                </li>
-                                <li>
+                                <!-- <li>
                                     <a href="index.html#millstones">Milestones</a>
-                                </li>
+                                </li> -->
                                 <li>
-                                    <a href="index.html#contact">Contact</a>
+                                    <a href="index.html#contact">Contato</a>
                                 </li>
                             </ul>
                         </nav>                       
@@ -145,15 +145,15 @@
             <!-- Footer -->
             <footer class="footer">
                 <div class="footer-content center-relative">
-                    <div class="footer-logo">
-                        <img src="images/footer_logo.png" alt="Seppo" />
-                    </div>        
+                    <!-- <div class="footer-logo">
+                        <img src="images/logo_b12_tp.png" alt="Seppo" />
+                    </div>         -->
                     <div class="footer-logo-divider"></div>
                     <div class="footer-mail">            
-                        <a href="mailto:hello@site.com">hello@cocobasic.com</a>
+                        <a href="contato.b12digital@gmail.com">contato.b12digital@gmail.com</a>
                     </div>
                     <div class="footer-social-divider"></div>
-                    <div class="social-holder">
+                    <!-- <div class="social-holder">
                         <a href="#">
                             <span class="fa fa-twitter"></span>
                         </a>
@@ -166,10 +166,10 @@
                         <a href="#">
                             <span class="fa fa-dribbble"></span>
                         </a>
-                    </div>
+                    </div> -->
 
                     <div class="copyright-holder">
-                        © 2018 Seppo HTML Template by <a href="https://cocobasic.com">CocoBasic</a>            
+                        © 2022 Lucas Matutani</a>            
                     </div>
                 </div>
             </footer>

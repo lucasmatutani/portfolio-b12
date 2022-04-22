@@ -825,7 +825,6 @@ h1.big-text {
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
-    height: 100vh;
 }
 
 .service-holder {
@@ -2167,7 +2166,7 @@ footer .footer-social-divider:before {
     }
 
     .one_third {
-        width: calc(88% / 3);
+        width: calc(100% / 3);
     }
 
     .two_third {
