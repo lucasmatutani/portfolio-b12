@@ -129,8 +129,8 @@ if (isset($_POST['submit'])) {
                         SERVIÇOS
                     </h3>
                 </div>
-                <div class="section-wrapper block content-1170 center-relative" >
-                    <div class="content-wrapper" style="margin-bottom: 40px;">
+                <div class="section-wrapper block content-1170 center-relative" style="padding: 130px 0 30px 0;">
+                    <div class="content-wrapper">
 
                         <div class="one_third">
                             <div class="service-holder">
@@ -433,7 +433,7 @@ if (isset($_POST['submit'])) {
                         TIME
                     </h3>
                 </div>
-                <div class="section-wrapper block content-1170 center-relative">
+                <div class="section-wrapper block content-1170 center-relative" style="padding: 150px 0 115px 0;">
                     <div class="content-wrapper">
                         <div class="member member-left">
                             <img src="images/eu_vertical.jpeg" alt="">
