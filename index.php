@@ -72,29 +72,29 @@ if (isset($_POST['submit'])) {
                     <nav id="header-main-menu">
                         <ul class="main-menu sm sm-clean">
                             <li>
-                                <a href="#home">Página Inicial</a>
+                                <a href="#home">Home</a>
                             </li>
                             <li>
                                 <a href="#services">Serviços</a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="#about">Sobre</a>
-                            </li>
-                            <li>
+                            </li> -->
+                            <!-- <li>
                                 <a href="#portfolio">Portfólios</a>
-                            </li>
+                            </li> -->
                             <!-- <li>
                                     <a href="#pricing">Preços</a>
                                 </li> -->
                             <li>
                                 <a href="#team">Time</a>
                             </li>
-                            <li>
-                                <a href="#skills">Skills</a>
-                            </li>
                             <!-- <li>
-                                    <a href="#millstones">Milestones</a>
-                                </li> -->
+                                <a href="#skills">Skills</a>
+                            </li> -->
+                            <li>
+                                <a href="#millstones">Clientes</a>
+                            </li>
                             <li>
                                 <a href="#contact">Contato</a>
                             </li>
@@ -112,8 +112,7 @@ if (isset($_POST['submit'])) {
                 <div class="section-wrapper content-1170">
                     <div class="content-wrapper">
                         <h1 class="big-text">
-                            Bem vindo <br>
-                            Somos a B12!
+                            Boas vindas a B12
                         </h1>
                         <div class="button-holder text-left">
                             <a href="#about" class="button">SAIBA MAIS!</a>
@@ -129,10 +128,10 @@ if (isset($_POST['submit'])) {
                         SERVIÇOS
                     </h3>
                 </div>
-                <div class="section-wrapper block content-1170 center-relative" style="padding: 130px 0 30px 0;">
+                <div class="section-wrapper block content-1170 center-relative service-container">
                     <div class="content-wrapper">
 
-                        <div class="one_third">
+                        <div class="one_third service-div">
                             <div class="service-holder">
                                 <p class="service-num">1</p>
                                 <div class="service-txt">
@@ -140,8 +139,7 @@ if (isset($_POST['submit'])) {
                                     <p>
                                         Do layout ao banco de dados.
                                     </p>
-                                    <br>
-                                    <div class="button-holder text-left">
+                                    <div class="button-holder text-left service-btn1">
                                         <a href="#portfolio" class="button-dot">
                                             <span>MAIS</span>
                                         </a>
@@ -150,16 +148,15 @@ if (isset($_POST['submit'])) {
                             </div>
                         </div>
 
-                        <div class="one_third">
+                        <div class="one_third service-div">
                             <div class="service-holder">
                                 <p class="service-num">2</p>
                                 <div class="service-txt">
-                                    <h4>Suporte e Web Desinger</h4>
+                                    <h4>Design Gráfico e Digital</h4>
                                     <p>
-                                        Temos o melhor suporte e os melhores layouts para o seu site.
+                                        Gráfico ou Digital, nós criamos as melhores peças pra você.
                                     </p>
-                                    <br>
-                                    <div class="button-holder text-left" style="padding-top: 15px;">
+                                    <div class="button-holder text-left service-btn2">
                                         <a href="#news" class="button-dot">
                                             <span>MAIS</span>
                                         </a>
@@ -168,16 +165,15 @@ if (isset($_POST['submit'])) {
                             </div>
                         </div>
 
-                        <div class="one_third last">
+                        <div class="one_third service-div last">
                             <div class="service-holder">
                                 <p class="service-num">3</p>
                                 <div class="service-txt">
-                                    <h4>Audio Visual</h4>
+                                    <h4>Audiovisual</h4>
                                     <p>
-                                        Vídeos 3D e Plugins.
+                                        Da gravação á edição, o workflow completo para encher os olhos dos seus clientes!
                                     </p>
-                                    <br>
-                                    <div class="button-holder text-left" style="padding-top: 102px;">
+                                    <div class="button-holder text-left service-btn3">
                                         <a href="#contact" class="button-dot">
                                             <span>MAIS</span>
                                         </a>
@@ -186,12 +182,34 @@ if (isset($_POST['submit'])) {
                             </div>
                         </div>
                         <div class="clear"></div>
+
+                        <!-- <div class="service-teste">
+                            <div class="button-holder text-left service-btn1">
+                                <a href="#portfolio" class="button-dot">
+                                    <span>MAIS</span>
+                                </a>
+                            </div>
+
+                            <div class="button-holder text-left service-btn2">
+                                <a href="#portfolio" class="button-dot">
+                                    <span>MAIS</span>
+                                </a>
+                            </div>
+
+                            <div class="button-holder text-left service-btn3">
+                                <a href="#portfolio" class="button-dot">
+                                    <span>MAIS</span>
+                                </a>
+                            </div> -->
+
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- About Section -->
-            <div id="about" class="section">
+
+        <!-- About Section -->
+        <!-- <div id="about" class="section">
                 <div class="page-title-holder">
                     <h3 class="entry-title">
                         SOBRE
@@ -225,10 +243,10 @@ if (isset($_POST['submit'])) {
                         <div class="clear"></div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <!-- Portfolio Section -->
-            <div id="portfolio" class="section no-padding">
+        <!-- Portfolio Section -->
+        <!-- <div id="portfolio" class="section no-padding">
                 <div class="page-title-holder">
                     <h3 class="entry-title">
                         PORTFÓLIOS
@@ -284,10 +302,10 @@ if (isset($_POST['submit'])) {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <!-- Pricing Section -->
-            <!-- <div id="pricing" class="section">                   
+        <!-- Pricing Section -->
+        <!-- <div id="pricing" class="section">                   
                     <div class="page-title-holder">
                         <h3 class="entry-title">
                             PRICING             
@@ -426,124 +444,94 @@ if (isset($_POST['submit'])) {
                     </div>
                 </div>  -->
 
-            <!-- Team Section -->
-            <div id="team" class="section">
-                <div class="page-title-holder">
-                    <h3 class="entry-title">
-                        TIME
-                    </h3>
-                </div>
-                <div class="section-wrapper block content-1170 center-relative" style="padding: 150px 0 115px 0;">
-                    <div class="content-wrapper">
-                        <div class="member member-left">
-                            <img src="images/eu_vertical.jpeg" alt="">
-                            <div class="member-info">
-                                <p class="member-postition">DESENVOLVEDOR WEB</p>
-                                <h5 class="member-name">Lucas Matutani</h5>
-                                <div class="member-content">
-                                    <p>
-                                        Code the energy hidden in matter citizens of distant epochs sun. Citizens of distant epochs encyclopaedia galant ctica the ash of stellar alchemy Vangelis white dwarf adipisci velit. Nemo enim ipsam volupta tem quia voluptas sit aspernatur aut odit aut fugit radio telescope quis nostrum exercitatio nem ullam corporis suscipit laboriosam quis.
-                                    </p>
-                                    <div class="member-social-holder">
-                                        <div class="social">
-                                            <a href="https://www.linkedin.com/in/lucas-matutani-9a6576208/" target="_blank">
-                                                <i class="fa-brands fa-linkedin"></i>
-                                            </a>
-                                        </div>
-                                        <div class="social">
-                                            <a href="https://github.com/lucasmatutani" target="_blank">
-                                                <i class="fa-brands fa-github"></i>
-                                            </a>
-                                        </div>
-                                        <div class="social">
-                                            <a href="mailto:lucasmatutani@gmail.com" target="_blank">
-                                                <i class="fa-solid fa-envelope"></i>
-                                            </a>
-                                        </div>
+        <!-- Team Section -->
+        <div id="team" class="section">
+            <div class="page-title-holder">
+                <h3 class="entry-title">
+                    TIME
+                </h3>
+            </div>
+            <div class="section-wrapper block content-1170 center-relative">
+                <div class="container-team">
+                    
+                    <div class="member">
+                        <img src="images/eu_vertical.jpeg" alt="">
+                        <div class="member-info">
+                            <p class="member-postition">DESENVOLVEDOR WEB</p>
+                            <h5 class="member-name">Lucas Matutani</h5>
+                            <div class="member-content">
+                                <p>
+                                    Code the energy hidden in matter citizens of distant epochs sun. Citizens of distant epochs encyclopaedia galant ctica the ash of stellar alchemy Vangelis white dwarf adipisci velit. Nemo enim ipsam volupta tem quia voluptas sit aspernatur aut odit aut fugit radio telescope quis nostrum exercitatio nem ullam corporis suscipit laboriosam quis.
+                                </p>
+                                <div class="member-social-holder" style="background-color: #7599ff;">
+                                    <div class="social">
+                                        <a href="https://www.linkedin.com/in/lucas-matutani-9a6576208/" target="_blank">
+                                            <i class="fa-brands fa-linkedin-in"></i>
+                                        </a>
+                                    </div>
+                                    <div class="social">
+                                        <a href="https://github.com/lucasmatutani" target="_blank">
+                                            <i class="fa-brands fa-github"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <br>
+                    <br>
 
-                        <div class="member member-left">
-                            <img src="images/eu_vertical2.jpeg" alt="" />
-                            <div class="member-info">
-                                <p class="member-postition">DESIGNER</p>
-                                <h5 class="member-name">Vivian Higa</h5>
-                                <div class="member-content">
-                                    <p>
-                                        Code the energy hidden in matter citizens of distant epochs sun. Citizens of distant epochs encyclopaedia galant ctica the ash of stellar alchemy Vangelis white dwarf adipisci velit. Nemo enim ipsam volupta tem quia voluptas sit aspernatur aut odit aut fugit radio telescope quis nostrum exercitatio nem ullam corporis suscipit laboriosam quis.
-                                    </p>
-                                    <div class="member-social-holder">
-                                        <div class="social">
-                                            <a href="#" target="_blank">
-                                                <span class="fa fa-facebook"></span>
-                                            </a>
-                                        </div>
-                                        <div class="social">
-                                            <a href="#" target="_blank">
-                                                <span class="fa fa-twitter"></span>
-                                            </a>
-                                        </div>
-                                        <div class="social">
-                                            <a href="#" target="_blank">
-                                                <span class="fa fa-instagram"></span>
-                                            </a>
-                                        </div>
-                                        <div class="social">
-                                            <a href="#" target="_blank">
-                                                <span class="fa fa-vimeo"></span>
-                                            </a>
-                                        </div>
-                                        <div class="social">
-                                            <a href="#" target="_blank">
-                                                <span class="fa fa-behance"></span>
-                                            </a>
-                                        </div>
+                    <div class="member">
+                        <img src="images/eu_vertical2.jpeg" alt="" />
+                        <div class="member-info">
+                            <p class="member-postition">DESIGNER</p>
+                            <h5 class="member-name">Vivian Higa</h5>
+                            <div class="member-content">
+                                <p>
+                                    Code the energy hidden in matter citizens of distant epochs sun. Citizens of distant epochs encyclopaedia galant ctica the ash of stellar alchemy Vangelis white dwarf adipisci velit. Nemo enim ipsam volupta tem quia voluptas sit aspernatur aut odit aut fugit radio telescope quis nostrum exercitatio nem ullam corporis suscipit laboriosam quis.
+                                </p>
+                                <div class="member-social-holder" style="background-color: #ff75b3;">
+                                    <div class="social">
+                                        <a href="https://www.behance.net/sakurahiga" target="_blank">
+                                            <i class="fa-brands fa-behance"></i>
+                                        </a>
+                                    </div>
+                                    <div class="social">
+                                        <a href="https://www.linkedin.com/in/vivianhiga" target="_blank">
+                                            <i class="fa-brands fa-linkedin-in"></i>
+                                        </a>
+                                    </div>
+                                    <div class="social">
+                                        <a href="https://www.instagram.com/rabiscos.da.vi" target="_blank">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <br>
+                    <br>
 
-                        <div class="member member-left">
-                            <img src="images/dan_horizontal.jpeg" alt="" />
-                            <div class="member-info">
-                                <p class="member-postition">AUDIO VISUAL</p>
-                                <h5 class="member-name">Danilo Murakami</h5>
-                                <div class="member-content">
-                                    <p>
-                                        Code the energy hidden in matter citizens of distant epochs sun. Citizens of distant epochs encyclopaedia galant ctica the ash of stellar alchemy Vangelis white dwarf adipisci velit. Nemo enim ipsam volupta tem quia voluptas sit aspernatur aut odit aut fugit radio telescope quis nostrum exercitatio nem ullam corporis suscipit laboriosam quis.
-                                    </p>
-                                    <div class="member-social-holder">
-                                        <div class="social">
-                                            <a href="#" target="_blank">
-                                                <span class="fa fa-facebook"></span>
-                                            </a>
-                                        </div>
-                                        <div class="social">
-                                            <a href="#" target="_blank">
-                                                <span class="fa fa-twitter"></span>
-                                            </a>
-                                        </div>
-                                        <div class="social">
-                                            <a href="#" target="_blank">
-                                                <span class="fa fa-instagram"></span>
-                                            </a>
-                                        </div>
-                                        <div class="social">
-                                            <a href="#" target="_blank">
-                                                <span class="fa fa-vimeo"></span>
-                                            </a>
-                                        </div>
-                                        <div class="social">
-                                            <a href="#" target="_blank">
-                                                <span class="fa fa-behance"></span>
-                                            </a>
-                                        </div>
+                    <div class="member">
+                        <img src="images/dan_horizontal.jpeg" alt="" />
+                        <div class="member-info">
+                            <p class="member-postition">AUDIO VISUAL</p>
+                            <h5 class="member-name">Danilo Murakami</h5>
+                            <div class="member-content">
+                                <p>
+                                    Code the energy hidden in matter citizens of distant epochs sun. Citizens of distant epochs encyclopaedia galant ctica the ash of stellar alchemy Vangelis white dwarf adipisci velit. Nemo enim ipsam volupta tem quia voluptas sit aspernatur aut odit aut fugit radio telescope quis nostrum exercitatio nem ullam corporis suscipit laboriosam quis.
+                                </p>
+                                <div class="member-social-holder" style="background-color: #9575ff;">
+                                    <div class="social">
+                                        <a href="https://www.behance.net/dan_murakami" target="_blank">
+                                            <i class="fa-brands fa-behance"></i>
+                                        </a>
+                                    </div>
+                                    <div class="social">
+                                        <a href="https://www.linkedin.com/in/danmurakami" target="_blank">
+                                            <i class="fa-brands fa-linkedin-in"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -551,9 +539,10 @@ if (isset($_POST['submit'])) {
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- Skills Section -->
-            <div id="skills" class="section">
+        <!-- Skills Section -->
+        <!-- <div id="skills" class="section">
                 <div class="page-title-holder">
                     <h3 class="entry-title">
                         SKILLS
@@ -573,11 +562,11 @@ if (isset($_POST['submit'])) {
                             <p>
                                 Code the energy hidden in matter citizens of distant epochs from which we spring drake equation perga inconspicuous motespatch clean designed code and energy matter.
                             </p>
-                            <br>
-                            <!-- <div class="button-holder text-left">
+                            <br> -->
+        <!-- <div class="button-holder text-left">
                                 <a href="#portfolio" class="button">LEARN MORE</a>
                             </div> -->
-                        </div>
+        <!-- </div>
 
                         <div class="one_half last">
                             <div class="skills-holder">
@@ -637,93 +626,45 @@ if (isset($_POST['submit'])) {
                         <div class="clear"></div>
                     </div>
                 </div>
+            </div> -->
+
+        <!-- Millstones Section -->
+        <div id="millstones" class="section">
+            <div class="page-title-holder">
+                <h3 class="entry-title">
+                    CLIENTES
+                </h3>
             </div>
+            <div class="section-wrapper block content-1170 center-relative">
+                <div class="content-wrapper">
 
-            <!-- Millstones Section -->
-            <!-- <div id="millstones" class="section">                   
-                    <div class="page-title-holder">
-                        <h3 class="entry-title">
-                            MILESTONES             
-                        </h3>
-                    </div>
-                    <div class="section-wrapper block content-1170 center-relative">                                                
-                        <div class="content-wrapper">
-                            <ul class="milestones-holder">
 
-                                <li class="milestone">
-                                    <div class="milestone-info-left">
-                                        <p class="milestone-num">135</p>
-                                    </div>
-                                    <div class="milestone-info-right">
-                                        <h5>Terabytes of files uploaded</h5>
-                                        <p class="milestone-text">
-                                            Nulla ac laoreet est, a mollis nibh. Aenean eget auctor velit quis pharetra.
-                                        </p>
-                                    </div>
-                                </li>
 
-                                <li class="milestone">
-                                    <div class="milestone-info-left">
-                                        <p class="milestone-num">67K</p>
-                                    </div>
-                                    <div class="milestone-info-right">
-                                        <h5>Lines of CSS code wrote</h5>
-                                        <p class="milestone-text">
-                                            Nulla ac laoreet est, a mollis nibh. Aenean eget auctor velit quis pharetra.
-                                        </p>
-                                    </div>
-                                </li>
-
-                                <li class="milestone">
-                                    <div class="milestone-info-left">
-                                        <p class="milestone-num">74</p>
-                                    </div>
-                                    <div class="milestone-info-right">
-                                        <h5>Cups of coffee drinked per week</h5>
-                                        <p class="milestone-text">
-                                            Nulla ac laoreet est, a mollis nibh. Aenean eget auctor velit quis pharetra.
-                                        </p>
-                                    </div>
-                                </li>
-
-                                <li class="milestone">
-                                    <div class="milestone-info-left">
-                                        <p class="milestone-num">389</p>
-                                    </div>
-                                    <div class="milestone-info-right">
-                                        <h5>Happy clients served this year</h5>
-                                        <p class="milestone-text">
-                                            Nulla ac laoreet est, a mollis nibh. Aenean eget auctor velit quis pharetra.
-                                        </p>
-                                    </div>
-                                </li>
-
-                            </ul>
-                        </div>                        
-                    </div>
-                </div>  -->
-
-            <!-- Contact Section -->
-            <div id="contact" class="section">
-                <div class="page-title-holder">
-                    <h3 class="entry-title">
-                        CONTATO
-                    </h3>
                 </div>
-                <div class="section-wrapper block content-1170 center-relative">
-                    <div class="content-wrapper">
-                        <div class="one_half ">
-                            <p class="title-description-up">FALE CONOSCO</p>
-                            <h2 class="entry-title medium-text">
-                                Dúvidas?<br>
-                                Vamos conversar!
-                            </h2>
-                            <p>
-                                Mande sua mensagem e responderemos o mais rápido possível.
-                            </p>
-                            <br>
+            </div>
+        </div>
 
-                            <!-- <div class="social">
+        <!-- Contact Section -->
+        <div id="contact" class="section">
+            <div class="page-title-holder">
+                <h3 class="entry-title">
+                    CONTATO
+                </h3>
+            </div>
+            <div class="section-wrapper block content-1170 center-relative">
+                <div class="content-wrapper">
+                    <div class="one_half ">
+                        <p class="title-description-up">FALE CONOSCO</p>
+                        <h2 class="entry-title medium-text">
+                            Dúvidas?<br>
+                            Vamos conversar!
+                        </h2>
+                        <p>
+                            Mande sua mensagem e responderemos o mais rápido possível.
+                        </p>
+                        <br>
+
+                        <!-- <div class="social">
                                 <a href="#" target="_blank">
                                     <span class="fa fa-facebook"></span>
                                 </a>
@@ -748,46 +689,46 @@ if (isset($_POST['submit'])) {
                                     <span class="fa fa-behance"></span>
                                 </a>
                             </div> -->
-                        </div>
-
-
-                        <div class="one_half last">
-                            <form class="contact-form" action="index.php" method="POST">
-                                <p>
-                                    <input id="name" type="text" name="name" placeholder="Nome">
-                                </p>
-                                <p>
-                                    <input id="email" type="email" name="email" placeholder="Email">
-                                </p>
-                                <p>
-                                    <input id="subject" type="text" name="subject" placeholder="Assunto">
-                                </p>
-                                <p>
-                                    <textarea id="content" name="content" placeholder="Mensagem"></textarea>
-                                </p>
-                                <p class="contact-submit-holder">
-                                    <input type="submit" value="ENVIAR" name="submit" id="submit">
-                                </p>
-                            </form>
-                        </div>
-                        <div class="clear"></div>
                     </div>
+
+
+                    <div class="one_half last">
+                        <form class="contact-form" action="index.php" method="POST">
+                            <p>
+                                <input id="name" type="text" name="name" placeholder="Nome">
+                            </p>
+                            <p>
+                                <input id="email" type="email" name="email" placeholder="Email">
+                            </p>
+                            <p>
+                                <input id="subject" type="text" name="subject" placeholder="Assunto">
+                            </p>
+                            <p>
+                                <textarea id="content" name="content" placeholder="Mensagem"></textarea>
+                            </p>
+                            <p class="contact-submit-holder">
+                                <input type="submit" value="ENVIAR" name="submit" id="submit">
+                            </p>
+                        </form>
+                    </div>
+                    <div class="clear"></div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-content center-relative">
-                <!-- <div class="footer-logo">
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content center-relative">
+            <!-- <div class="footer-logo">
                         <img src="images/footer_logo.png" alt="Seppo" />
                     </div>         -->
-                <div class="footer-logo-divider"></div>
-                <div class="footer-mail">
-                    <a href="mailto:contato.b12digital@gmail.com">contato.b12digital@gmail.com</a>
-                </div>
-                <div class="footer-social-divider"></div>
-                <!-- <div class="social-holder">
+            <div class="footer-logo-divider"></div>
+            <div class="footer-mail">
+                <a href="mailto:contato.b12digital@gmail.com">contato.b12digital@gmail.com</a>
+            </div>
+            <div class="footer-social-divider"></div>
+            <!-- <div class="social-holder">
                         <a href="#">
                             <span class="fa fa-twitter"></span>
                         </a>
@@ -802,11 +743,11 @@ if (isset($_POST['submit'])) {
                         </a>
                     </div> -->
 
-                <div class="copyright-holder">
-                    © 2022 Lucas Matutani
-                </div>
+            <div class="copyright-holder">
+                © 2022 Lucas Matutani
             </div>
-        </footer>
+        </div>
+    </footer>
     </div>
 
     <!--Load JavaScript-->
