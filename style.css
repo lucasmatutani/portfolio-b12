@@ -833,24 +833,19 @@ h1.big-text {
     padding: 130px 0 30px 0 !important;
 }
 
-/* .service-teste{
-    display: flex;
-    flex-direction: row;
-} */
-
-.service-btn1{
-    /* margin-right: 290px !important; */
+/* .service-btn1{
+    margin-right: 290px !important;
     margin-top: 15.5vh;
 }
 
 .service-btn2{
-    /* margin-right: 290px !important; */
+    margin-right: 290px !important;
     margin-top: 9vh;
 }
 
 .service-btn3{
     margin-top: 30.5vh;
-}
+} */
 
 .service-holder {
     margin: 25px 0;
